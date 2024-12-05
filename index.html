@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>PASSWORD GENERATOR</title>
+</head>
+<body>
+    <div class="container">
+        <div class="generator">
+            <div class="password">
+                <input type="text" value id="text-input">
+                <button class="btncopy">COPY</button>
+            </div>
+            <div class="range">
+                <input type="range" min="8" max="24" value="8" id="range-input">
+                <span id="range-inputvalue">8</span>
+            </div>
+            <div class="checkBoxOptions">
+                <div class="options1">
+                    <label>
+                        <input type="checkbox" id="cblowerCase" checked>
+                        <span>a-z</span>
+                    </label>
+                </div>
+                <div class="options2">
+                    <label>
+                        <input type="checkbox" id="cbupperCase">
+                        <span>A-Z</span>
+                    </label>
+                </div>
+                <div class="options3">
+                    <label>
+                    <input type="checkbox" id="cbInt">
+                    <span>0-9</span>
+                </label>
+                </div>
+                <div class="options4">
+                    <label>
+                    <input type="checkbox" id="cbSpecial">
+                    <span>!@$&#</span>
+                </label>
+                </div>
+            </div>
+            <div class="genbtn">
+                <button class="generateNewPass">
+                    GENERATE
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
